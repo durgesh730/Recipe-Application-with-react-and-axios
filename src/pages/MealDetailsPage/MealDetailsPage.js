@@ -46,7 +46,7 @@ const MealDetailsPage = () => {
 
   return (
     <main className='main-content bg-whitesmoke'>
-      { (mealLoading) ? <span>Loading...</span>  : <MealSingle meal = {singleMeal} /> }
+      { (mealLoading) ? <div className='text-center py-5'>Loading...</div>  : <MealSingle meal = {singleMeal} /> }
     </main>
   )
 }
