@@ -6,9 +6,10 @@ import {
   Route
 } from "react-router-dom";
 // pages
-import { Home, MealDetails, Error } from "./pages/index";
+import { Home, MealDetails } from "./pages/index";
 // components
 import Header from "./components/Header/Header";
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/meal/:id" element={<MealDetails />} />
       </Routes>
+      <Footer/>
     </BrowserRouter>
   );
 }
